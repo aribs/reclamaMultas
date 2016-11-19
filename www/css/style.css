@@ -1,1 +1,8 @@
 /* Empty. Add your own CSS if you like */
+.mainContent {
+  background-color: #dfdfdf;
+}
+
+p#init-msg {
+  margin: 1em auto;
+}
