@@ -39,6 +39,7 @@ angular.module('starter', ['ionic'])
         'provMun': $scope.provMun,
       };
       console.log(datosForm);
+      $http.post('http://192.168.1.34:3000/api/post-form', datosForm);
     alert('formulario enviado');
   }
 });
