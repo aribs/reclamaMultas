@@ -22,3 +22,23 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+.controller('sendFormData', function($scope, $http){
+  console.log("hola");
+  $scope.submitForm = function () {
+      var datosForm ={
+        'nombre': $scope.nombre,
+        'apellidoUno': $scope.apellidoUno,
+        'apellidoDos': $scope.apellidoDos,
+        'email': $scope.email,
+        'nExpediente': $scope.nExpediente,
+        'fechaDenuncia': $scope.fechaDenuncia,
+        'lugar': $scope.lugar,
+        'matricula': $scope.matricula,
+        'dni': $scope.dni,
+        'cuantia': $scope.multa,
+        'provMun': $scope.provMun,
+      };
+      console.log(datosForm);
+    alert('formulario enviado');
+  }
+});

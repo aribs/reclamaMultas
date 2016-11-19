@@ -37,41 +37,47 @@
       <ion-header-bar class="bar-stable">
         <h1 class="title">Welcome To ReclamaMultas!</h1>
       </ion-header-bar>
-      <ion-content class="mainContent">
+      <ion-content class="mainContent" ng-controller="sendFormData">
         <p id="init-msg" class="col col-75">Rellena el siguiente formulario:</p>
         <div class="list">
-          <label class="item item-input">
-            <input type="text" placeholder="Nombre">
-          </label>
-          <label class="item item-input">
-            <input type="text" placeholder="Primer apellido">
-          </label>
-          <label class="item item-input">
-            <input type="text" placeholder="Segundo apellido">
-          </label>
-          <label class="item item-input">
-            <input type="text" placeholder="Número de expediente">
-          </label>
-          <label class="item item-input">
-            <input type="text" placeholder="Fecha de la denuncia">
-          </label>
-          <label class="item item-input">
-            <input type="text" placeholder="Lugar">
-          </label>
-          <label class="item item-input">
-            <input type="text" placeholder="Matrícula">
-          </label>
-          <label class="item item-input">
-            <input type="text" placeholder="DNI">
-          </label>
-          <label class="item item-input">
-            <input type="text" placeholder="Cuantía de la sanción">
-          </label>
-          <label class="item item-input">
-            <input type="text" placeholder="Provincia/Municipio">
-          </label>
+          <form ng-submit="submitForm()">
+            <label class="item item-input">
+              <input type="text" value="" name="nombre" ng-model="nombre" placeholder="Nombre">
+            </label>
+            <label class="item item-input">
+              <input type="text" value="" name="apellidoUno" ng-model="apellidoUno" placeholder="Primer apellido">
+            </label>
+            <label class="item item-input">
+              <input type="text" value="" name="apellidoDos" ng-model="apellidoDos" placeholder="Segundo apellido">
+            </label>
+            <label class="item item-input">
+              <input type="text" value="" name="email" ng-model="email" placeholder="Email">
+            </label>
+            <label class="item item-input">
+              <input type="text" value="" name="nExpediente" ng-model="nExpediente" placeholder="Número de expediente">
+            </label>
+            <label class="item item-input">
+              <input type="text" value="" name="fechaDenuncia" ng-model="fechaDenuncia" placeholder="Fecha de la denuncia">
+            </label>
+            <label class="item item-input">
+              <input type="text" value="" name="lugar" ng-model="lugar" placeholder="Lugar">
+            </label>
+            <label class="item item-input">
+              <input type="text" value="" name="matricula" ng-model="matricula" placeholder="Matrícula">
+            </label>
+            <label class="item item-input">
+              <input type="text" value="" name="dni" ng-model="dni" placeholder="DNI">
+            </label>
+            <label class="item item-input">
+              <input type="text" value="" name="cuantia" ng-model="cuantia" placeholder="Cuantía de la sanción">
+            </label>
+            <label class="item item-input">
+              <input type="text" value="" name="provMun" ng-model="provMun" placeholder="Provincia/Municipio">
+            </label>
+            <input type="submit" id="submit" class="button button-positive"></button>
+          </form>
         </div>
-        <input type="submit" class="button button-positive"></button>
+
     </ion-content>
     </ion-pane>
   </body>
